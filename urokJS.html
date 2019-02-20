@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>UrokJS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="urokJS.css">
+        
+    
+    
+    </head>
+    <body>
+        
+        
+        
+        <input type="text" onblur= "helloka()">
+        <select onechange="helloka()"  >
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="tree">tree</option>
+            
+        
+        
+        </select>
+        <input type="text" onchange="alertvalue('ez a text: '+ this.value)">
+        <select onchange="alertvalue(this.value + '-ez a kivalasztas')"  >
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="tree">tree</option>
+            
+        
+        
+        </select>
+        <button type="submit" onclick="helloka()">knopka</button>
+        
+        
+        <button id="myset" onclick="">set vegetables</button>
+        <select id="myselect"></select>
+        <input type="text" placeholder="uj gyumolcs">
+        <button id="mydod" onclick="">dodati</button>
+        
+        <script>
+        
+            function helloka(){
+                alert('privet vsim');
+            }
+        
+            function alertvalue(value){
+                alert(value);
+            }
+            
+            
+            
+        
+        </script>   
+    
+    
+    
+    </body>
+
+</html>
