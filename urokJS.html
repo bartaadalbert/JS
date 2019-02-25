@@ -34,9 +34,12 @@
         
         <button id="myset" onclick="initselect()">set fruits</button>
         <select id="myselect" onchange="alertertek(this.value)" ></select>
-        <input type="text" placeholder="uj gyumolcs">
-        <button id="mydod" onclick="">dodati</button>
-        
+        <input id="mydod" type="text"  placeholder="uj gyumolcs">
+        <button  onclick="addfruits()" >dodati</button><br>
+        <input id="a1" type="number"   placeholder="az a betu inicializalasa" ><br>
+        <input id="b1" type="number"   placeholder="a b betu inicializalasa" ><br>
+        <input id="c1" type="number"   placeholder="a c betu inicializalasa" ><br>
+        <button type="submit" onclick="kkorin()" >egyenlo</button>
         <script>
         
             function helloka(){
@@ -47,20 +50,62 @@
                 alert(value);
             }
             
-            var fruits=['apple', 'orange', 'strawberry', 'banana', 'mandarine'];
-            console.log (fruits.length);
+            var fruits= [];
+            function deffru(){
+                fruits =['apple', 'orange', 'strawberry', 'banana', 'mandarine'];
+            }
+            
+            deffru();
+//            console.log (fruits.length);
             
             var select = document.getElementById('myselect');
              function initselect(){
-              var fruits=['apple', 'orange', 'strawberry', 'banana', 'mandarine'];
+//              var fruits=['apple', 'orange', 'strawberry', 'banana', 'mandarine'];
                  select.innerHTML='';
                  for(var i=0; i<fruits.length; i++){
             select.innerHTML= select.innerHTML+ '<option value="'+fruits[i]+'" >'+fruits[i]+'</option>';
                  }
              }
             
+            function newf(name){
+                fruits.push(name);
+            }
+            function addfruits(){
+                var edit = document.getElementById('mydod');
+                newf(edit.value);
+//                initselect();
+                edit.value='';
+                                            
+            }
         
-        </script>   
+        </script>  
+        
+        <script>
+        
+            
+            function kkorin(){
+         var a= document.getElementById('a1').value;
+         var b= document.getElementById('b1').value;
+         var c= document.getElementById('c1').value;
+         var d= b*b-4*a*c;
+         var D= Math.sqrt(d);
+            var x1;
+            var x2;
+        
+            if(d>0){
+                 x1= (-b+D)/2*a;
+                 x2= (-b-D)/2*a;
+                alert("x1= "+x1);
+                alert("x2= "+x2);
+            }else if(d==0){
+                x1=-b/(2*a);
+                alert("x1=x2= "+x1);
+            }else if(d<0){
+                alert("Nincs gyok!!!");
+            }
+            
+        }
+        </script>
     
     
     
