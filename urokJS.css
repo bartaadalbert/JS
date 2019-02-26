@@ -1,0 +1,9 @@
+html, body, div, ul, ol, li, a, h1, h2, h3, h4, h5, h6{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+.main_menu{
+    background-color: darkgray;
+}

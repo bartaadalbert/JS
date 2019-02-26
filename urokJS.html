@@ -3,7 +3,7 @@
         <title>UrokJS</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="urokJS.css">
-        
+       
     
     
     </head>
@@ -30,7 +30,27 @@
         
         <button type="submit" onclick="helloka()">knopka</button>
 -->
+            <header>
         
+                <div class="main_menu" id="main_menu">blabal
+                
+                    <a href="DArrays.html" class="one_menu_items">
+                    
+                    </a> 
+                    
+                                        
+                    <a href="DArrays.html" class="one_menu_items">
+                    
+                    </a>
+                
+                </div>
+        
+            </header> 
+        
+         <script type="text/javascript" src="main_menu.js">
+        
+        
+        </script>
         
         <button id="myset" onclick="initselect()">set fruits</button>
         <select id="myselect" onchange="alertertek(this.value)" ></select>
@@ -39,7 +59,14 @@
         <input id="a1" type="number"   placeholder="az a betu inicializalasa" ><br>
         <input id="b1" type="number"   placeholder="a b betu inicializalasa" ><br>
         <input id="c1" type="number"   placeholder="a c betu inicializalasa" ><br>
-        <button type="submit" onclick="kkorin()" >egyenlo</button>
+        <button type="submit" onclick="kkorin()" >egyenlo</button><br>
+        
+       
+        
+        
+        
+        
+        
         <script>
         
             function helloka(){
@@ -56,7 +83,7 @@
             }
             
             deffru();
-//            console.log (fruits.length);
+            console.log (fruits.length);
             
             var select = document.getElementById('myselect');
              function initselect(){
