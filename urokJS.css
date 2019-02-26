@@ -4,6 +4,21 @@ html, body, div, ul, ol, li, a, h1, h2, h3, h4, h5, h6{
     text-decoration: none;
     list-style: none;
 }
+img{
+    width: 100%;
+}
 .main_menu{
     background-color: darkgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.one_menu_items{
+    color: black;
+    cursor: pointer;
+    
+}
+.one_menu_items:hover{
+    background-color: floralwhite;
+    height: 20px;
 }
