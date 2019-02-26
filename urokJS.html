@@ -99,7 +99,12 @@
             }
             function addfruits(){
                 var edit = document.getElementById('mydod');
-                newf(edit.value);
+                if(edit.value){
+                   newf(edit.value);  
+                }else(
+                alert("You need write sum fruits!!!!")
+                )
+               
 //                initselect();
                 edit.value='';
                                             
