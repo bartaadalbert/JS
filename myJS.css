@@ -1,0 +1,118 @@
+body, div, li, ul, a, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_menu{
+    background-color: #001f2c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 57px;
+
+    
+}
+.logo {
+    width: 20%;
+    align-items: center;
+}
+.main_menu_one{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+/*    justify-content: space-around;*/
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Noto Sans',sans-serif;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    font-weight: 500;
+    line-height: 23px;
+    color: aliceblue;
+}
+.games:hover{
+    background-color: dimgray;
+    transition: 1s;
+    cursor: pointer;
+}
+.games{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 57px;
+    font-weight: 800;
+}
+.subscribe:hover{
+    background-color: dimgray;
+    cursor: pointer;
+    transition: 1s;
+}
+.subscribe{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 57px;
+    font-weight: 800;
+}
+.account:hover{
+    background-color: dimgray;
+    cursor: pointer;
+    transition: 1s;
+}
+.account{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 57px;
+    font-weight: 800;
+}
+.support:hover{
+    background-color: dimgray;
+    cursor: pointer;
+    transition: 1s;
+    }
+.support{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 57px;
+    font-weight: 800;
+}
+ures{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 57px; 
+}
+.download:hover{
+    cursor: pointer;
+    background-color: darkorange;
+    transition: 1s;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Noto Sans',sans-serif;
+    background: #cddc39;
+    border-color: #cddc39;
+    border-radius: 50px;
+    height: 48px;
+    align-items: center;
+   
+}
+.download_con{
+   
+/*    margin-right: 50px;*/
+    width: 30%;
+    padding-left: 40px
+}
